@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HOMSA</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                          <!-- this to explain the spaning on the logo, that is if you dont have a logo, 
+                         you can use an "alt=()" for a word and am gona remove (Homsa)cuase i a logo-->
+                        <img src="D:\my projects\HOMSA\gallery\IMG-20251218-WA0012.jpg" alt="HOMSA Logo">
+                        <span>.</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="donate.html" class="donate-btn">Donate</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="divider"></div>
+            <p>Get in touch with HOMSA leadership and committees</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT INFO CARDS ===== -->
+    <section class="contact-cards section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit Us</h3>
+                    <p>HOMSA Community Center</p>
+                    <p>Kampala, Uganda</p>
+                    <p>P.O. Box [Your Box Number]</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call Us</h3>
+                    <p>General Inquiries: +256 [Phone]</p>
+                    <p>Programs: +256 [Phone]</p>
+                    <p>Emergency: +256 [Phone]</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>info@homsa.org</p>
+                    <p>programs@homsa.org</p>
+                    <p>donate@homsa.org</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 9am - 5pm</p>
+                    <p>Saturday: 10am - 2pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT FORM & MAP ===== -->
+    <section class="contact-form-section section bg-light">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message. We will respond within 24 hours. (Demo - form not connected to backend)'); this.reset();">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number (Optional)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="programs">Programs Information</option>
+                                <option value="donations">Donations & Zakat</option>
+                                <option value="volunteer">Volunteer Opportunities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Map & Additional Info -->
+                <div class="map-container">
+                    <h2>Find Us</h2>
+                    <div class="map-placeholder">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.35832804626!2d32.41567495!3d0.3136112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f9d4b3b21%3A0x9b5e5e5b5e5b5e5b!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="350" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    
+                    <div class="quick-contacts">
+                        <h3>Quick Contacts</h3>
+                        <p><i class="fas fa-user"></i> Amiir/Chairman: +256 [Phone]</p>
+                        <p><i class="fas fa-user"></i> Programs Coordinator: +256 [Phone]</p>
+                        <p><i class="fas fa-user"></i> Youth Officer: +256 [Phone]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COMMITTEE CONTACTS ===== -->
+    <section class="committee-contacts section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Committee Contacts</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="committee-grid">
+                <div class="committee-card">
+                    <h3>Executive Committee</h3>
+                    <p><i class="fas fa-user"></i> Amiir: Sheikh [Name]</p>
+                    <p><i class="fas fa-user"></i> Amiira: Hajjat [Name]</p>
+                    <p><i class="fas fa-user"></i> Secretary: Br. [Name]</p>
+                    <p><i class="fas fa-user"></i> Treasurer: Sr. [Name]</p>
+                </div>
+                
+                <div class="committee-card">
+                    <h3>Programs Committee</h3>
+                    <p><i class="fas fa-user"></i> Coordinator: Br. [Name]</p>
+                    <p><i class="fas fa-user"></i> Youth Programs: Br. [Name]</p>
+                    <p><i class="fas fa-user"></i> Sisters Programs: Sr. [Name]</p>
+                </div>
+                
+                <div class="committee-card">
+                    <h3>Social Services</h3>
+                    <p><i class="fas fa-user"></i> Charity: Br. [Name]</p>
+                    <p><i class="fas fa-user"></i> Zakat: Sr. [Name]</p>
+                    <p><i class="fas fa-user"></i> Hospital Visits: Br. [Name]</p>
+                </div>
+                
+                <div class="committee-card">
+                    <h3>ICT & Publicity</h3>
+                    <p><i class="fas fa-user"></i> ICT Officer: [Your Name]</p>
+                    <p><i class="fas fa-user"></i> Publicity: Br. [Name]</p>
+                    <p><i class="fas fa-user"></i> Social Media: Sr. [Name]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOCIAL MEDIA CONNECT ===== -->
+    <section class="social-connect section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Connect With Us</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="social-large">
+                <a href="#" class="social-large-item facebook">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-large-item twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="social-large-item instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-large-item whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="#" class="social-large-item youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="D:\my projects\HOMSA\gallery\IMG-20251218-WA0012.jpg"alt="HOMSA" class="footer-logo">
+                    <p>Home Muslims Association</p>
+                    <p>Building community through faith and service</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +256 [Your Phone]</p>
+                    <p><i class="fas fa-envelope"></i> info@homsa.org</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Home Muslims Association. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
